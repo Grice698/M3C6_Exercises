@@ -85,13 +85,13 @@ En MongoDB no tenemos exactamente el mismo tipo de nomenclatura que en SQL pero 
 
 Así se vería una consulta en MongoDB en la que creamos una colección de libros:
 
-<div align="center">![coleccion](https://github.com/Grice698/M3C6_Exercises/blob/1d647d9bbc712527a80d34443724a4139386fca3/markdown_images/Captura%20de%20pantalla%202026-04-01%20162010.png)</div>
+![coleccion](https://github.com/Grice698/M3C6_Exercises/blob/1d647d9bbc712527a80d34443724a4139386fca3/markdown_images/Captura%20de%20pantalla%202026-04-01%20162010.png)
  
 > La sintaxis de Mongo, tanto por cómo se escribe como por los valores que devuelve, es muy familiar a Javascript. Si estuvieras haciendo esto en un entorno de API y acabaras de crear una colección, podrías obtener este objeto y tratarlo como un JSON puro. 
 
 Ahora podemos escribir ‘show collections’ y nos mostrará las colecciones que hemos creado: 
 
-<div align="center">![resultado](https://github.com/Grice698/M3C6_Exercises/blob/1d647d9bbc712527a80d34443724a4139386fca3/markdown_images/Captura%20de%20pantalla%202026-04-01%20162105.png)</div>
+![resultado](https://github.com/Grice698/M3C6_Exercises/blob/1d647d9bbc712527a80d34443724a4139386fca3/markdown_images/Captura%20de%20pantalla%202026-04-01%20162105.png)
 
 #### Ventajas y desventajas de usar MongoDB
 *	Entre las ventajas de MongoDB destacan su flexibilidad, rapidez en el desarrollo, facilidad para escalar y buen rendimiento con grandes volúmenes de datos.
