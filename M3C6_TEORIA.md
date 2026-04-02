@@ -83,13 +83,13 @@ Existen distintos tipos de bases de datos, pero una de las clasificaciones más 
 
 En MongoDB no tenemos exactamente el mismo tipo de nomenclatura que en SQL pero sí tenemos bases de datos. Dentro de estas tenemos lo que se llama colecciones. Las colecciones son la analogía más cercana a una tabla. Antes de poder empezar a guardar los documentos, necesitamos crear colecciones para almacenarlos. En Mongo, obtienes un objeto JSON de clave-valor, donde la clave es "ok" y un integer como 1.  Así se vería una consulta en MongoDB en la que creamos una colección de libros:
 
-![Colecciones resultado]("C:\Users\greis\Desktop\HTML-CSS\FULL STACK\MODULO 3\checkpoint-2\markdown_images\Captura de pantalla 2026-04-01 162010.png")
+![Colecciones resultado]("Cmarkdown_images\Captura de pantalla 2026-04-01 162010.png")
  
 > La sintaxis de Mongo, tanto por cómo se escribe como por los valores que devuelve, es muy familiar a Javascript. Si estuvieras haciendo esto en un entorno de API y acabaras de crear una colección, podrías obtener este objeto y tratarlo como un JSON puro. 
 
 Ahora podemos escribir ‘show collections’ y nos mostrará las colecciones que hemos creado: 
 
-![Colecciones resultado]("C:\Users\greis\Desktop\HTML-CSS\FULL STACK\MODULO 3\checkpoint-2\markdown_images\Captura de pantalla 2026-04-01 162105.png")
+![Colecciones resultado]("markdown_images\Captura de pantalla 2026-04-01 162105.png")
 
 #### Ventajas y desventajas de usar MongoDB
 *	Entre las ventajas de MongoDB destacan su flexibilidad, rapidez en el desarrollo, facilidad para escalar y buen rendimiento con grandes volúmenes de datos.
