@@ -81,15 +81,17 @@ Existen distintos tipos de bases de datos, pero una de las clasificaciones más 
 
 * Por otro lado, las bases de datos NoSQL son sistemas de almacenamiento no relacionales, flexibles y distribuidos, diseñados para manejar grandes volúmenes de datos no estructurados. __MongoDB__ es una base de datos no relacional que está orientada a documentos y almacena la información en objetos similares a JavaScript. 
 
-En MongoDB no tenemos exactamente el mismo tipo de nomenclatura que en SQL pero sí tenemos bases de datos. Dentro de estas tenemos lo que se llama colecciones. Las colecciones son la analogía más cercana a una tabla. Antes de poder empezar a guardar los documentos, necesitamos crear colecciones para almacenarlos. En Mongo, obtienes un objeto JSON de clave-valor, donde la clave es "ok" y un integer como 1.  Así se vería una consulta en MongoDB en la que creamos una colección de libros:
+En MongoDB no tenemos exactamente el mismo tipo de nomenclatura que en SQL pero sí tenemos bases de datos. Dentro de estas tenemos lo que se llama colecciones. Las colecciones son la analogía más cercana a una tabla. Antes de poder empezar a guardar los documentos, necesitamos crear colecciones para almacenarlos. En Mongo, obtienes un objeto JSON de clave-valor, donde la clave es "ok" y un integer como 1
 
-![coleccion](https://github.com/Grice698/M3C6_Exercises/blob/1d647d9bbc712527a80d34443724a4139386fca3/markdown_images/Captura%20de%20pantalla%202026-04-01%20162010.png)
+Así se vería una consulta en MongoDB en la que creamos una colección de libros:
+
+<div align="center">![coleccion](https://github.com/Grice698/M3C6_Exercises/blob/1d647d9bbc712527a80d34443724a4139386fca3/markdown_images/Captura%20de%20pantalla%202026-04-01%20162010.png)</div>
  
 > La sintaxis de Mongo, tanto por cómo se escribe como por los valores que devuelve, es muy familiar a Javascript. Si estuvieras haciendo esto en un entorno de API y acabaras de crear una colección, podrías obtener este objeto y tratarlo como un JSON puro. 
 
 Ahora podemos escribir ‘show collections’ y nos mostrará las colecciones que hemos creado: 
 
-![resultado](https://github.com/Grice698/M3C6_Exercises/blob/1d647d9bbc712527a80d34443724a4139386fca3/markdown_images/Captura%20de%20pantalla%202026-04-01%20162105.png)
+<div align="center">![resultado](https://github.com/Grice698/M3C6_Exercises/blob/1d647d9bbc712527a80d34443724a4139386fca3/markdown_images/Captura%20de%20pantalla%202026-04-01%20162105.png)</div>
 
 #### Ventajas y desventajas de usar MongoDB
 *	Entre las ventajas de MongoDB destacan su flexibilidad, rapidez en el desarrollo, facilidad para escalar y buen rendimiento con grandes volúmenes de datos.
