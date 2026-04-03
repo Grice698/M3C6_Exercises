@@ -83,7 +83,10 @@ Existen distintos tipos de bases de datos, pero una de las clasificaciones más 
 
 En MongoDB no tenemos exactamente el mismo tipo de nomenclatura que en SQL pero sí tenemos bases de datos. Dentro de estas tenemos lo que se llama colecciones. Las colecciones son la analogía más cercana a una tabla. Antes de poder empezar a guardar los documentos, necesitamos crear colecciones para almacenarlos. En Mongo, obtienes un objeto JSON de clave-valor, donde la clave es "ok" y un integer como 1
 
-Así se vería una consulta en MongoDB en la que creamos una colección de libros:
+Para poder consultar algo, previamente debemos haber creado nuestra base de datos introduciendo el comando use:
+`> use mi_basededatos`
+
+Así se vería una consulta en MongoDB en la que creamos una colección de libros. 
 
 ![coleccion](https://github.com/Grice698/M3C6_Exercises/blob/1d647d9bbc712527a80d34443724a4139386fca3/markdown_images/Captura%20de%20pantalla%202026-04-01%20162010.png)
  
@@ -92,6 +95,24 @@ Así se vería una consulta en MongoDB en la que creamos una colección de libro
 Ahora podemos escribir ‘show collections’ y nos mostrará las colecciones que hemos creado: 
 
 ![resultado](https://github.com/Grice698/M3C6_Exercises/blob/1d647d9bbc712527a80d34443724a4139386fca3/markdown_images/Captura%20de%20pantalla%202026-04-01%20162105.png)
+
+### Insertar documentos en MongoDB
+Para insertar datos en una colección de MongoDB se utiliza el método `db.collection.find()` o `db.collection.insertMany()`, dependiendo de si queremos añadir uno o varios documentos:
+
+```
+db.books.find.insertOne({
+title: "1984",
+author: "George Orwell",
+genre: "Dystopian"
+})
+```
+
+### Eliminar documentos en MongoDB
+Para eliminar documentos en MongoDB, se utiliza el método `db.collection.deleteOne()` o `db.collection.deleteMany()`, dependiendo de si se quiere eliminar un solo documento o varios documentos a la vez. A continuación seguiremos con el ejemplo de la colección de libros, Vamos a eliminar el género literario de la colección:
+
+```
+db.books.deleteOne({ genre: "Dystopian" })
+```
 
 #### Ventajas y desventajas de usar MongoDB
 *	Entre las ventajas de MongoDB destacan su flexibilidad, rapidez en el desarrollo, facilidad para escalar y buen rendimiento con grandes volúmenes de datos.
@@ -195,7 +216,24 @@ Esto se debe a cómo Python maneja los métodos privados y protegidos dentro de 
 |  \_\_delitem\_\_      | Permite eliminar valores mediante índices       |  
 
 
-Vamos a crear un ejemplo breve utilizando el método mágico \_\_len\_\_. El objetivo es obtener la longitud de una instancia de una clase, en este caso una lista: 
+Vamos a crear varios ejemplos breves utilizando los métodos dunder. 
+
+En las siguientes líneas usaremos \_\_str\_\_, la cual controla lo que se debe devolver cuando el objeto de clase se representa como una cadena y al no estar configurada, se devuelve como tal:
+
+```
+class Amigo:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def __str__(self):
+        return f"{self.name}, {self.age}"
+p1 = Amigo("John", 36)
+print(p1)
+```
+> Salida: John, 36
+
+
+Otro ejemplo utilizando \_\_len\_\_. El objetivo es obtener la longitud de una instancia de una clase, en este caso una lista: 
 
 ```
 class Lista:
